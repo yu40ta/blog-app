@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-image">
+    <img src="<%= @article.image %>">
+    <span class="card-title"><%= @article.title %></span>
+  </div>
+  <div class="card-content">
+    <%= simple_format(@article.text)%>
+    <div class="card-action">
+      <%= link_to '一覧に戻る', "/", method: :get %>
+    </div>
+  </div>
+</div>

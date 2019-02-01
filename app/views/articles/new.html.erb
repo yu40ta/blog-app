@@ -1,0 +1,11 @@
+<h5>記事を投稿する</h5>
+<div class="col s12">
+  <%= form_for @article do |f| %>
+    <%= f.text_field :title, placeholder: 'タイトルを入力' %>
+    <%= f.text_field :image, placeholder: '画像URLを入力' %>
+    <%= f.text_area :text, placeholder: '本文を入力してください', style: 'width:100%;height: 300px;' %>
+    <%= f.submit :投稿 %>
+    <% end %>
+  </div>
+</div>
+

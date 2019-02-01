@@ -1,0 +1,10 @@
+<h5>記事を編集する</h5>
+  <div class="col s12">
+    <%= form_for @article do |f| %>
+      <%= f.text_field :title %>
+      <%= f.text_field :image %>
+      <%= f.text_area :text, style: 'width:100%;height: 300px;' %>
+      <%= f.submit :投稿 %>
+    <% end %>
+  </div>
+</div>
